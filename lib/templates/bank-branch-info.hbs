@@ -1,0 +1,33 @@
+<!--bank info on map-->
+<h4>{{name}}</h4>
+
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-building-o"></i></dt>
+    <dd>{{streetaddress}}, {{postalcode}}</dd>
+
+
+{{#if telephone}}
+    <dt><i class="fa fa-phone"></i></dt>
+    <dd>{{telephone}}</dd>
+{{/if}}
+
+
+{{#if faxnumber}}
+    <dt><i class="fa fa-fax"></i></dt>
+    <dd>{{faxnumber}}</dd>
+{{/if}}
+
+
+{{#if email}}
+    <dt><i class="fa fa-at"></i></dt>
+    <dd>{{email}}</dd>
+{{/if}}
+
+
+{{#if workinghours}}
+    <dt><i class="fa fa-clock-o"></i></dt>
+    <dd>{{workinghours}}</dd>
+{{/if}}
+
+</dl>
+

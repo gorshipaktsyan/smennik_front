@@ -1,0 +1,21 @@
+body {
+    padding-top: 100px;
+}
+
+.navbar-brand {
+    height: auto;
+    padding: 10px 15px;
+}
+
+
+#main .navbar {
+    padding: 8px;
+}
+
+
+.map {
+    height: 361px;
+}
+
+
+

@@ -1,0 +1,48 @@
+{{#each organizations}}
+    <tr>
+        <td> {{@index}} </td>
+        <td>
+            <img class="logo" src="/assets/logos/{{this.id}}.png">
+            <a data-url href="/bank/{{this.slug}}">
+                <strong> {{this.name}} </strong>
+            </a>
+        </td>
+
+        <td>
+            <a href="/bank/{{this.slug}}#branches">
+                <span data-hook="size"> {{this.size}} </span>
+            </a>
+        </td>
+
+        <td> -  (%) </td>
+
+    {{#each this.rates}}
+        <td class="rate {{#if buy-max}}extr{{/if}}">
+            {{buy}}
+        </td>
+        <td class="rate {{#if sell-min}}extr{{/if}}">
+            {{sell}}
+        </td>
+    {{/each}}
+
+    </tr>
+{{/each}}
+
+    <tr>
+        <td colspan="4"> Min </td>
+
+        {{#each extreme}}
+            <td>{{buy-min}}</td>
+            <td>{{sell-min}}</td>
+        {{/each}}
+    </tr>
+
+    <tr>
+        <td colspan="4"> Max </td>
+
+        {{#each extreme}}
+            <td>{{buy-max}}</td>
+            <td>{{sell-max}}</td>
+        {{/each}}
+    </tr>
+

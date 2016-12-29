@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Exchange rates </title>
+
+    <link href="/assets/style.css" rel="stylesheet">
+    <link href="/assets/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                 <a class="navbar-brand" href="http://localhost:8080/">Admin Panel</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+<div id="container" class="container">
+    <div id="wrapper" class="row" data-hook="page-wrapper">
+        <div id="main" class="section">
+            <section id="main">
+                <nav class="navbar navbar-default clearfix">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="type" id="option1" autocomplete="off" checked>
+                            Cash
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="type" id="option2" autocomplete="off">
+                            Non-cash
+                        </label>
+                    </div>
+                </nav>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th> # </th>
+                            <th class="rt-bank-col" rowspan="2">Exchange</th>
+                            <th class="">Branches</th>
+
+                            <th class=""> Amount </th>
+                            <th colspan="2" class="rt-currency-col">
+                                <select data-hook="currency-1">
+                                    <option value="usd" selected> USD </option>
+                                    <option value="eur"> EUR </option>
+                                    <option value="gbp"> GBP </option>
+                                    <option value="rub" data-amount="100"> RUB </option>
+                                </select>
+                            </th>
+
+                            <th class=""> Amount </th>
+                            <th colspan="2" class="rt-currency-col">
+                                <select data-hook="currency-2">
+                                    <option value="usd"> USD </option>
+                                    <option value="eur" selected> EUR </option>
+                                    <option value="gbp"> GBP </option>
+                                    <option value="rub" data-amount="100"> RUB </option>
+                                </select>
+                            </th>
+
+                            <th class=""> Amount </th>
+                            <th colspan="2" class="rt-currency-col">
+                                <select data-hook="currency-3">
+                                    <option value="usd"> USD </option>
+                                    <option value="eur"> EUR </option>
+                                    <option value="gbp" selected> GBP </option>
+                                    <option value="rub" data-amount="100"> RUB </option>
+                                </select>
+                            </th>
+
+                            <th class=""> Amount </th>
+                            <th colspan="2" class="rt-currency-col">
+                                <select data-hook="currency-1">
+                                    <option value="usd"> USD </option>
+                                    <option value="eur"> EUR </option>
+                                    <option value="gbp"> GBP </option>
+                                    <option value="rub" data-amount="100" selected> RUB </option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Main JS file -->
+    <script src="/assets/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYcwr43lRt7L2x-AILE45lw04Qaf7Y8yQ&libraries=geometry&callback=initialize" async defer></script>
+
+  </body>
+</html>

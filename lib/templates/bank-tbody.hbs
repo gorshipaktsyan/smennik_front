@@ -1,0 +1,15 @@
+<!--Each Bank rates table-->
+{{#each rates}}
+    <tr>
+        <!--<td> {{this.id}} </td>-->
+        <td> {{this.code}} </td>
+        <td> {{this.name}} </td>
+        <td> {{this.bulk}} </td>
+
+        <td> {{this.buy-cash}} </td>
+        <td> {{this.sell-cash}} </td>
+
+        <td> {{this.buy-noncash}} </td>
+        <td> {{this.sell-noncash}} </td>
+    </tr>
+{{/each}}
